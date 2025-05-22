@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 import { 
   Send, 
@@ -33,7 +34,7 @@ export function EnhancedAIChatInterface({
   
   const [inputMessage, setInputMessage] = useState('');
   const [isTyping, setIsTyping] = useState(false);
-  const [attachments, setAttachments] = useState<{name: string, type: string}[]>([]);
+  const [attachments, setAttachments] = useState<{name: string; url: string; type: string}[]>([]);
   const [isRecording, setIsRecording] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);

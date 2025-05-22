@@ -1,7 +1,7 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { AppLayout } from '@/components/layout/AppLayout';
-import { AIChatInterface } from '@/components/assistant/AIChatInterface';
+import { EnhancedAIChatInterface } from '@/components/assistant/EnhancedAIChatInterface';
 import { Badge } from '@/components/ui/badge';
 import { BookOpen, ClipboardCheck } from 'lucide-react';
 import { mockCourses, mockModules } from '@/data/mockData';
@@ -32,7 +32,7 @@ const Assistant = () => {
 
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex-1 order-2 lg:order-1">
-            <AIChatInterface 
+            <EnhancedAIChatInterface 
               quickActionSuggestions={quickActionSuggestions} 
             />
           </div>
